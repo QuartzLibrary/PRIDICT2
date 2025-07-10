@@ -133,3 +133,5 @@ dmypy.json
 experiments
 dataset/proc_v2
 
+#
+typings/

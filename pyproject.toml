@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pridict2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch==2.0.1",
+    "tensorflow==2.13.1",
+    #
+    "biopython==1.81",
+    "joblib==1.3.1",
+    "matplotlib==3.7.2",
+    "pandas==2.0.3",
+    "prettytable==3.8.0",
+    "primer3-py==2.0.0",
+    "scikit-learn==1.3.0",
+    "scipy==1.11.1",
+    "seaborn==0.12.2",
+    "tqdm==4.65.0",
+]
+
+[tool.setuptools]
+packages = ["pridict2"]
+
+[tool.setuptools.package-dir]
+"pridict2" = "."
+
+[tool.setuptools.package-data]
+"pridict2" = [
+    #
+    "*.pth",
+    "*.tar.xz",
+    "*.png",
+    "*.txt",
+    "*.md",
+    "pridict/*",
+    "silentbystander_addon/*",
+    "dataset/*",
+    "notebooks/*",
+    "input/*",
+    "log/*",
+    "predictions/*",
+    "trained_models/*",
+    "hpc_batch/*",
+
+]
